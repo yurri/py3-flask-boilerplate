@@ -1,0 +1,21 @@
+{
+	"_comment": "'mode' should be a key in 'modes' section below (e.g. 'production' or 'development')",
+    "mode": "development",
+
+	"_comment": [
+		"in every mode 'flask' branch is loaded directly into Flask application object",
+		"the full list of keys supported by Flask is at http://flask.pocoo.org/docs/config/#builtin-configuration-values"
+	],
+    "modes": {
+        "development": {
+			"flask": {
+	            "DEBUG": true
+			}
+        },
+        "production": {
+			"flask": {
+	            "DEBUG": false
+			}
+        }
+    }
+}

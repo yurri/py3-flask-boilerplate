@@ -1,3 +1,19 @@
+##############################
+# Application specific ignores
+##############################
+app/config/config.json
+
+################################
+# Python Tools for Visual Studio
+################################
+obj/*
+*.pyproj
+*.suo
+*.sln
+
+#####################################
+# default Pythong ingores from github
+#####################################
 *.py[cod]
 
 # C extensions

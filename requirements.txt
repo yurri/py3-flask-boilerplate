@@ -1,0 +1,4 @@
+Flask==0.10.1
+Flask-RESTful==0.2.3
+readline=6.2.4.1
+pyreadline=2.0
