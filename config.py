@@ -9,7 +9,7 @@ from os import path
 APP_PATH = path.abspath(path.dirname(__file__))     # application root path
 DATA_PATH = path.join(APP_PATH, 'app', 'data')      # data path e.g. for SQLite dbs
 
-sys.path.insert(0, path.join(APP_PATH, 'app', 'models'))    # add models to include path
+sys.path.insert(0, path.join(APP_PATH, 'app'))    # add models to include path
 
 import json
 with open(path.join(APP_PATH, 'app', 'config', 'config.json')) as f:

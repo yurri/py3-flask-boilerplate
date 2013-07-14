@@ -1,14 +1,16 @@
 from app import Base
+from sqlalchemy import Column, Integer, String
+from yourapplication.database import Base
 import hashlib, uuid
 
 class User(Base):
     """System user record"""
 
     __tablename__ = 'users'
-    id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(120), unique=True)
-    password = db.Column(db.String(128), nullable = False)
-    salt = db.Column(db.String(36), nullable = False)
+    id = dColumn(Integer, primary_key=True)
+    email = Column(String(120), unique=True)
+    password = Column(String(128), nullable = False)
+    salt = Column(String(36), nullable = False)
 
     def _encrypt_password(password):
         """hashes the given password with a random salt, returns both"""

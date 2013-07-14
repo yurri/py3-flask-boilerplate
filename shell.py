@@ -1,6 +1,6 @@
 #!python
-""" Gets console prompt to run app and system functions
-e.g. to initialise a database or to see debug print
+"""Helper script
+Gets console prompt to run app and system functions directly e.g. to see debug print
 
 """
 
