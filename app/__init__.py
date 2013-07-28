@@ -17,6 +17,13 @@ def not_found(error):
 def home():
   return render_template('home.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        pass
+    else:
+        return render_template('login.html')
+
 @app.after_request
 def shutdown_session(response):
     """Clear db session for correct multi-threading"""
